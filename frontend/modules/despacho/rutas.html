@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ruta Pedidos</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/header.css" />
     <link rel="stylesheet" href="/reset.css" />
     <link
@@ -35,10 +34,10 @@
       src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"
     ></script>
   </head>
-  <body>
+  <body class="rutabody">
     <img
-      width="160px"
-      height="160px"
+      width="100vw"
+      height="100vh"
       src="/public/logotipo-blanco-op.webp"
       alt="logo de wonka's"
       id="wonkaimg"
@@ -47,6 +46,7 @@
     <div class="contenedor">
       <div class="divlabel">
         <h2>Distancia y tiempo estimado</h2>
+        <div id="inputfondo">
         <strong
           ><input
             type="text"
@@ -65,8 +65,8 @@
           readonly
           oninput="autoResizeInput(this)"
         />
-        <label class="chiquita">min</label></strong
-      >
+        <label class="chiquita" id="minu">min</label></strong
+      ></div>
       </div>
       <div id="mapa">
         <div id="mapContainer"></div>

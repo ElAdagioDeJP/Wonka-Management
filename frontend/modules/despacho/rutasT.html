@@ -35,44 +35,45 @@
       src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"
     ></script>
   </head>
-  <body>
+  <body class="rutabody">
     <img
-      width="160px"
-      height="160px"
-      src="/public/logotipo-blanco-op.webp"
-      alt="logo de wonka's"
-      id="wonkaimg"
-    />
-    <hr />
-    <div class="contenedor">
-      <div class="divlabel">
-        <h2>Distancia y tiempo estimado</h2>
-        <strong
-          ><input
-            type="text"
-            id="destino"
-            placeholder=""
-            readonly
-            oninput="autoResizeInput(this)"
-          />
-          <label class="chiquita">km</label></strong
-        >
-        <strong
+    width="15%"
+    height="15%"
+    src="/public/logotipo-blanco-op.webp"
+    alt="logo de wonka's"
+    id="wonkaimg"
+  />
+  <hr />
+  <div class="contenedor">
+    <div class="divlabel">
+      <h2>Distancia y tiempo estimado</h2>
+      <div id="inputfondo">
+      <strong
         ><input
           type="text"
-          id="municipio"
+          id="destino"
           placeholder=""
           readonly
           oninput="autoResizeInput(this)"
         />
-        <label class="chiquita">min</label></strong
+        <label class="chiquita">km</label></strong
       >
-      </div>
-      <div id="mapa">
-        <div id="mapContainer"></div>
-      </div>
-      <a href="index.html"><div id="boton">Regresar</div></a>
+      <strong
+      ><input
+        type="text"
+        id="municipio"
+        placeholder=""
+        readonly
+        oninput="autoResizeInput(this)"
+      />
+      <label class="chiquita" id="minu">min</label></strong
+    ></div>
     </div>
+    <div id="mapa">
+      <div id="mapContainer"></div>
+    </div>
+    <a href="index.html"><div id="boton">Regresar</div></a>
+  </div>
     <script src="rutasT.js"></script>
   </body>
 </html>
